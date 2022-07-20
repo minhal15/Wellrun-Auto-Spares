@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto Mono', monospace;
+    font-family: 'Russo One', sans-serif;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+nav {
+    flex: 1;
+    text-align: right;
+}
+nav ul {
+    display: inline-block;
+    list-style-type: none;
+}
+nav ul li {
+    display: inline-block;
+    margin: 20px;
+}
+a {
+    text-decoration: none;
+    color: #555;
+}
+p {
+    color: #555;
+}
+.container {
+    max-width: 1300px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.col2 {
+    flex-basis: 50%;
+    min-width: 300px;
+}
+.col2 img {
+    max-width: 100%;
+    padding: 50px 10px;
+}
+.col2 h1 {
+    font-size: 50px;
+    line-height: 60px;
+    margin: 25px 0;
+    color: green;
+}
+.header {
+    background: radial-gradient(#fff, #90ee90);
+
+}
+.header .row {
+    margin-top: 70px;
+}
+.categories {
+    margin: 70px 0;
+
+}
+.col3 {
+    flex-basis: 30%;
+    min-width: 250px;
+    margin-bottom: 30px;
+}
+.col3 img {
+    width: 80%;
+}
+.smaller {
+    max-width: 1080px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.col4 {
+    flex-basis: 20%;
+    padding: 10px;
+    min-width: 200px;
+    margin-bottom: 50px;
+    transition: transform 0.5s;
+}
+.col4 img {
+    width: 80%;
+}
+.featured {
+    text-align: center;
+    margin: 0 auto 60px;
+    position: relative;
+    line-height: 60px;
+    color: green;
+    font-size: 200%;
+}
+.featured ::after {
+    content: '';
+    background: #1a7503;
+    width: 80px;
+    height: 5px;
+    border-radius: 5px ;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+h4 {
+    color: rgb(10, 0, 0);
+    font-weight: normal;
+}
+.col4 p {
+    font-size: 14px;
+}
+.col4:hover {
+    transform: translateY(-5px);
+}
+.sale {
+    background: radial-gradient(#fff, #90ee90);
+    margin-top: 80px;
+    padding: 30px 0;
+}
+small {
+    color: #1a7503;
+}
+h1 {
+    color: #1a7503;
+}
+.button {
+    display: inline-block;
+    background: green;
+    color: #fff;
+    padding: 8px 30px;
+    margin: 30px 0;
+    border-radius: 30px;
+}
+@media screen and (max-width: 1024px) { /* Specific to this particular image */
+    img.bg {
+      left: 50%;
+      margin-left: -512px;   /* 50% */
+    }
+  }
